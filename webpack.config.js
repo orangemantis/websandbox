@@ -4,7 +4,8 @@ var browserSyncPlugin = new browserSync({
     host: 'localhost',
     port: 8081,//handles browser sync
     proxy: 'http://localhost:8080',//served from webpack server
-    reload: false
+    reload: false,
+    files: 'index.html'
 });
 
 var config = {
